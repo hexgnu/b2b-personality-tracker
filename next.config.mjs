@@ -8,6 +8,8 @@ try {
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
+  basePath: '/b2b-personality-tracker',
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -21,7 +23,7 @@ const nextConfig = {
     webpackBuildWorker: true,
     parallelServerBuildTraces: true,
     parallelServerCompiles: true,
-  },
+  }
 }
 
 mergeConfig(nextConfig, userConfig)
